@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edoardo Pessina — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">EP</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#astro">Astrophotography</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="starfield"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Edoardo<br/>Pessina</h1>
+      <p class="hero-role">Geoinformatics Engineer &amp; AI Researcher</p>
+      <p class="hero-tagline">
+        Turning satellite data, deep learning, and a love for the night sky<br class="hide-sm"/>
+        into meaningful insights about our planet — and beyond.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Geospatial intelligence,<br/>built from first principles.</h2>
+          <p>
+            I'm a Master's student in <strong>Geoinformatics Engineering</strong> at Politecnico di Milano
+            (expected Dec 2026), with a background in Environmental Engineering. My work sits at the
+            intersection of <strong>Earth Observation</strong>, <strong>Deep Learning</strong>, and
+            <strong>Big Data</strong> — using satellite imagery and neural networks to understand
+            how our planet is changing.
+          </p>
+          <p>
+            I've spent years as a <strong>science communicator</strong> at the Ca' del Monte
+            Astronomical Observatory, where I bring the complexity of space down to Earth for general
+            audiences. That same passion drives my astrophotography and fuels my curiosity
+            in every project I take on.
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-value">27<span class="fact-unit">/30</span></span>
+              <span class="fact-label">GPA — M.Sc.</span>
+            </div>
+            <div class="fact">
+              <span class="fact-value">8+</span>
+              <span class="fact-label">Years science communication</span>
+            </div>
+            <div class="fact">
+              <span class="fact-value">5</span>
+              <span class="fact-label">Major ML projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <div class="edu-degree">M.Sc. Geoinformatics Engineering</div>
+              <div class="edu-school">Politecnico di Milano</div>
+              <div class="edu-meta">2024 – Expected Dec 2026</div>
+              <ul class="edu-courses">
+                <li>Advanced Deep Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Uncertainty in AI</li>
+                <li>Systems for Big Data</li>
+                <li>Earth Observation Advanced</li>
+              </ul>
+            </div>
+            <div class="edu-divider"></div>
+            <div class="edu-item">
+              <div class="edu-degree">B.Sc. Environmental Engineering</div>
+              <div class="edu-school">Politecnico di Milano</div>
+              <div class="edu-meta">Completed Mar 2025</div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <h3>Thesis</h3>
+            <p class="thesis-text">
+              Deep Learning framework for <strong>storm surge global prediction</strong> —
+              exploring neural architectures that model ocean dynamics at planetary scale.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2>Technical expertise</h2>
+      <p class="section-sub">A full-stack toolkit for geospatial AI — from raw satellite bands to production-ready models.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag highlight">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">R</span>
+            <span class="tag">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Machine Learning &amp; AI</h3>
+          <div class="skill-tags">
+            <span class="tag highlight">PyTorch</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">TensorBoard</span>
+            <span class="tag">TIMM</span>
+            <span class="tag">Albumentations</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Data &amp; Systems</h3>
+          <div class="skill-tags">
+            <span class="tag highlight">SQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Cassandra</span>
+            <span class="tag">Neo4J</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Dash</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Geospatial &amp; Remote Sensing</h3>
+          <div class="skill-tags">
+            <span class="tag highlight">Google Earth Engine</span>
+            <span class="tag">QGIS</span>
+            <span class="tag">SNAP</span>
+            <span class="tag">GDAL</span>
+            <span class="tag">CAMS</span>
+            <span class="tag">Rasterio</span>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2>Selected work</h2>
+      <p class="section-sub">End-to-end ML pipelines applied to real-world geospatial and scientific challenges.</p>
+
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-index="01">
+          <div class="project-header">
+            <div class="project-num">01</div>
+            <div class="project-tags-row">
+              <span class="ptag">CNN</span>
+              <span class="ptag">Random Forest</span>
+              <span class="ptag">MLP</span>
+              <span class="ptag">GEE</span>
+            </div>
+          </div>
+          <h3 class="project-title">Rutor Glacier Temporal Classification</h3>
+          <p class="project-desc">
+            Built an automated Google Earth Engine pipeline extracting <strong>1,178 ten-band spectral
+            signatures</strong> from 40 years of Landsat imagery to track glacier dynamics.
+            Compared 1D-CNN, MLP, and Random Forest architectures on severely imbalanced geospatial data.
+          </p>
+          <ul class="project-metrics">
+            <li><span class="metric-val">99.1%</span> classification accuracy</li>
+            <li><span class="metric-val">~50%</span> glacier volume loss quantified</li>
+            <li><span class="metric-val">−1.05 km²/yr</span> measured retreat rate</li>
+          </ul>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-index="02">
+          <div class="project-header">
+            <div class="project-num">02</div>
+            <div class="project-tags-row">
+              <span class="ptag">PyTorch</span>
+              <span class="ptag">LSTM</span>
+              <span class="ptag">TensorBoard</span>
+              <span class="ptag">Kaggle</span>
+            </div>
+          </div>
+          <h3 class="project-title">Human Activity Recognition with RNNs</h3>
+          <p class="project-desc">
+            Designed a Bidirectional LSTM (2-layer, 156 units) for multi-class sequence classification
+            using skeletal joints and clinical data. Applied rigorous user-based splitting and L1/L2
+            regularization to prevent data leakage.
+          </p>
+          <ul class="project-metrics">
+            <li><span class="metric-val">91.4%</span> F1-score achieved</li>
+            <li><span class="metric-val">Bi-LSTM</span> 2-layer, 156 units</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-link muted">Kaggle Competition</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-index="03">
+          <div class="project-header">
+            <div class="project-num">03</div>
+            <div class="project-tags-row">
+              <span class="ptag">PyTorch</span>
+              <span class="ptag">TIMM</span>
+              <span class="ptag">Albumentations</span>
+              <span class="ptag">Kaggle</span>
+            </div>
+          </div>
+          <h3 class="project-title">Ensemble Deep Learning for Image Classification</h3>
+          <p class="project-desc">
+            Architected a robust vision ensemble combining <strong>EfficientNetV2, ConvNeXt,
+            and ResNet152</strong> for an 8-class image classification challenge.
+            Tackled class imbalance through Focal Loss, Mixup/CutMix augmentation,
+            and Test-Time Augmentation.
+          </p>
+          <ul class="project-metrics">
+            <li><span class="metric-val">53.4%</span> accuracy on 8-class task</li>
+            <li><span class="metric-val">3-model</span> ensemble architecture</li>
+          </ul>
+          <div class="project-footer">
+            <span class="project-link muted">Kaggle Competition</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-index="04">
+          <div class="project-header">
+            <div class="project-num">04</div>
+            <div class="project-tags-row">
+              <span class="ptag">PyTorch</span>
+              <span class="ptag">Vision Transformer</span>
+              <span class="ptag">HLS</span>
+              <span class="ptag">Fine-tuning</span>
+            </div>
+          </div>
+          <h3 class="project-title">Fine-Tuning Geospatial Foundation Models</h3>
+          <p class="project-desc">
+            Fine-tuned the <strong>300M-parameter Prithvi Vision Transformer</strong> (and Terramind)
+            for a 10-class land cover segmentation task using only 100 training samples.
+            Dynamically adapted RGB embeddings to process 7-band multispectral satellite chips.
+          </p>
+          <ul class="project-metrics">
+            <li><span class="metric-val">300M</span> parameter model</li>
+            <li><span class="metric-val">100</span> training samples only</li>
+            <li><span class="metric-val">40%</span> accuracy — low-data regime</li>
+          </ul>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ASTROPHOTOGRAPHY -->
+  <section id="astro">
+    <div class="container">
+      <div class="section-label">04 — Astrophotography</div>
+      <div class="astro-grid">
+        <div class="astro-text">
+          <h2>Where science<br/>meets art.</h2>
+          <p>
+            Before I wrote my first line of Python, I was already staring at the sky. For over five years
+            I've worked as a <strong>science communicator</strong> at the Ca' del Monte Astronomical Observatory,
+            guiding visitors through the cosmos one eyepiece at a time.
+          </p>
+          <p>
+            Astrophotography is the practice of patience — long exposures, stacking frames, teasing signal
+            from noise. Sound familiar? The same intuition I apply to satellite imagery processing started
+            here, under dark skies, chasing photons from objects millions of light-years away.
+          </p>
+          <p>
+            It's also a constant reminder of <em>why</em> Earth Observation matters: seen from orbit,
+            our planet is a fragile, luminous pale blue dot — worth understanding, worth protecting.
+          </p>
+          <div class="astro-badges">
+            <div class="astro-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              Deep-sky imaging
+            </div>
+            <div class="astro-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              Science communication
+            </div>
+            <div class="astro-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Space missions
+            </div>
+          </div>
+        </div>
+        <div class="astro-visual">
+          <div class="star-field-box">
+            <canvas id="astroCanvas"></canvas>
+            <div class="astro-caption">
+              <span class="astro-caption-title">Ca' del Monte Observatory</span>
+              <span class="astro-caption-sub">Science communicator since 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <div class="contact-inner">
+        <h2>Let's connect.</h2>
+        <p class="contact-sub">
+          Always open to research collaborations, internship opportunities,
+          or just a good conversation about space, AI, or our planet.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:edoardo3.pessina@mail.polimi.it" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span class="cc-label">Email</span>
+              <span class="cc-value">edoardo3.pessina@mail.polimi.it</span>
+            </div>
+          </a>
+          <a href="https://github.com/astroedo" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <div>
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">github.com/astroedo</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/edoardo-pessina" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <div>
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">linkedin.com/in/edoardo-pessina</span>
+            </div>
+          </a>
+        </div>
+        <div class="contact-lang">
+          <span>Italian — Native</span>
+          <span class="lang-sep">·</span>
+          <span>English — Fluent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Edoardo Pessina — Geoinformatics Engineer &amp; Science Communicator</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
